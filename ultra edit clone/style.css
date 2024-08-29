@@ -1,3 +1,29 @@
-body{
+body {
     background-color: gray;
+    margin: 0;
+}
+.nav-container {
+    margin: 0;
+    padding: 20px;
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: white;
+}
+
+.nav-list {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+}
+
+.nav-list-items {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
