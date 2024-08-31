@@ -1,17 +1,18 @@
 body {
-    background-color: gray;
+    /* background-color: gray; */
+    /* overflow: hidden; */
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .nav-container {
     margin: 0;
     padding: 20px;
-    width: 100vw;
-    height: 8vh;
-    position: fixed;
     display: flex;
     justify-content: space-around;
-
     background-color: white;
+    position: relative;
+    top: 0%;
 }
 
 .nav-list {
@@ -22,8 +23,101 @@ body {
 
 .nav-list-items {
     font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.main-upper-section {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-section-title-img {
+    margin-left: 10px;
+}
+
+.main-upper-title p {
+    font-size: 45px;
+    margin: 0;
+    margin-top: 60px;
+}
+
+.main-upper-section>p {
+    font-size: 23px;
+}
+
+
+.main-upper-section-btn {
+    padding: 18px;
+    background-color: #24b7ce;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-lower-section {
+    max-width: 50vw;
+    margin: 100px auto;
+}
+
+.main-lower-ver img {
+    width: 60px;
+    height: 60px;
+}
+
+.main-lower-ver {
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.item {
+    padding: 10px;
+    /* 377 × 257 */
+    /* height: 250px;
+    width: 373px; */
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+}
+
+.item p {
+    overflow-wrap: break-word;
+    margin: 20px 5px;
+    font-size: small;
+}
+
+.item button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+}
+
+@media (1300px <=width < 2000px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (1300px > width) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
 }
